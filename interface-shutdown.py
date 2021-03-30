@@ -6,7 +6,7 @@ from getpass import getpass
 # Prompt for username and password
 username = input("Username: ")
 password = getpass()
-device = input("What node are you configuring? "
+device = input("What node are you configuring? ")
 
 # node aka router or switch connection information
 node = {
