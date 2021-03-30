@@ -20,17 +20,16 @@ node = {
 ssh = ConnectHandler(**node)
 
 # desired configuration set
-configuration = [ 
+configuration = [
     'int {{ interface }}',
-    'description {{ description }}', 
-    'ip address {{ ip address }} {{ subnet mask }}'
+    'shutdown'
 ]
 
 # push configuration set to the node
 ssh.send_config_set(configuration)
 
-# inform user of completion 
-print("The interface has been configured")
+# inform user of completion
+print("The interface has been shutdown.")
 
 # disconnect from node
 ssh.disconnect()
