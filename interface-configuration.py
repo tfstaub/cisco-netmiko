@@ -21,7 +21,7 @@ ssh = ConnectHandler(**node)
 
 # desired configuration set
 configuration = [ 
-    'int {{ interface }}',
+    'interface {{ interface }}',
     'description {{ description }}', 
     'ip address {{ ip address }} {{ subnet mask }}'
 ]
